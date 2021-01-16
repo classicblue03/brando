@@ -19,7 +19,7 @@
 #wrap #header.addHeader {height:60px; border-bottom:0; background:#000; /* transparent -> 스크롤시 블랙으로 바뀜*/}
 /* #wrap #header:hover {height:60px; background:transparent; border-bottom:0;} */
 
-#wrap #header .wrap {width: 100%; max-width: 1170px; height: 100%; margin: 0 auto;/* 임시배경 w1170*/}
+#wrap #header .wrap {width: 100%; max-width: 1170px; height: 100%; margin: 0 auto;/* 임시배경 w1170 */}
 #wrap #header .wrap .gap{width: auto; height: 100%; margin: 0 15px;}
 #wrap #header .wrap .gap .container{width: 100%; height: 100%;/* 임시배경w 1140*/}
 
@@ -301,10 +301,42 @@
 
 /* Special dishes */
 /* 조상영역들의 높이 = 마지막 자손영역의 높이가(content 높이에 따라서) 결정함.*/
-#wrap #main #section08{width: 100%; height: auto; padding: 130px 0 0 0; background: url(../img/restaurant-img24.jpg) no-repeat 50% 0 fixed; background-size: cover;}
-#wrap #main #section08 .wrap{width: 100%; height: auto;} 
-#wrap #main #section08 .wrap .gap{width: 100%; height: auto;}
-#wrap #main #section08 .wrap .gap .container{width: 100%; /*임시높이*/height: 582px;}
+#wrap #main #section08 {width:100%; height:auto; padding: 130px 0; background:url(../img/restaurant-img24.jpg) no-repeat 50% 0 fixed; background-size: cover;}
+#wrap #main #section08 .wrap {width:100%; max-width:1170px; height: auto; margin:0 auto;}
+#wrap #main #section08 .wrap .gap {width: 100%; height: auto; margin: 0;}
+#wrap #main #section08 .wrap .gap .container {width: 100%; height: auto;}
+#wrap #main #section08 .wrap .gap .container .title{width: 100%;}
+#wrap #main #section08 .wrap .gap .container .title h2{text-align: center;}
+#wrap #main #section08 .wrap .gap .container .title h2 img{width: 100%; max-width: 483px;}
+
+#wrap #main #section08 .wrap .gap .container .content {width: 100%;}
+#wrap #main #section08 .wrap .gap .container .content ul {width: 100%;}
+#wrap #main #section08 .wrap .gap .container .content ul li {float: left; width: 33.333%;}
+
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap {margin: 0 15px;}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap {position:relative; margin: 0 auto; width: 100%; max-width: 289px; /* max-width:289px; */}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .img-wrap {z-index: 1; position: relative; width: 100%; transition: all .3s;}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .img-wrap:hover {transform: scale(1.15);}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .img-wrap img {width: 100%;}
+
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .price-wrap{z-index:2; position: absolute; top:0; right:0; z-index: 2; width: 90px; height: 90px; text-align: center; border-radius: 50%; background: #dc3535;}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .price-wrap div{padding-top: 28px;}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .price-wrap div h4{font-size: 11px; color: #fff; padding-bottom: 5px; font-weight: 600;} 
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .price-wrap div h5{font-size: 18px; color: #fff;}
+
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .title-wrap{text-align: center; padding-top: 35px;}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .title-wrap h3{font-size: 18px; color: #fff; padding-bottom: 10px; font-weight: 600;}
+#wrap #main #section08 .wrap .gap .container .content ul li .img-gap .box-wrap .title-wrap h4{font-size: 11px; color: #ababab;}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Food gallery */
