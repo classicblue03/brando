@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Brando Restaurant</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10"> ie10이상일때-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+    <!-- 폼요소 선택(포커스)시 확대 현상을 제거 user-scalable=no -->
+    <meta name="Title" content="BRANDO RESTORANT">
+    <meta name="Publisher" content="퍼블리셔 강민채">
+    <meta name="Author-date" content="2020-12-19">
+    <meta name="Author" content="BRANDO">
+    <meta name="Copyright" content="BRANDO">
+    <meta name="Keywords" content="BRANDO, 웹표준, 웹접근성, BRANDO RESTORANT, BRANDO 반응형 웹사이트">
+    <meta name="Description" content="BRANDO는 웹 제작 전문 메이커 미국 브랜드 입니다.">
+    <meta name="Robots" content="index,follow">
+     
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./img/icon-lunch.png">
+    <link rel="apple-touch-icon" href="./img/icon-lunch.png">
+
+    <!-- 오픈 아이콘 -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/response.css">
+    
+    <!-- 오픈소스 -->   
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>    
+    <script src="./js/lib/jquery.touchSwipe.js"></script>
+    <script src="./js/lib/prefixfree.min.js"></script>
+    <script src="./js/lib/jquery.easing.1.3.js"></script>
+
+    <!-- 조건 주석문 익스프롤러 하위 IE9 IE8 IE7 폴리필 -->
+    <!-- 스크립트 스타일 -->
+    
+    <!--[if lte IE 9]>
+        <script src="./js/lib/IE9.js"></script>
+    <![endif]-->
+    
+    <!--[if lte IE 8]>
+        <script src="./js/lib/html5shiv.min.js"></script>    
+        <script src="./js/lib/jqPIE.js"></script>    
+        <script src="./js/lib/PIE.js"></script>  
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+        
+    <![endif]-->
+</head>
+
+<body>
+<ul class="skip">
+    <li><a href="#header">메뉴 바로가기</a></li>
+    <li><a href="#main">메인 바로가기</a></li>
+    <li><a href="#footer">하단 바로가기</a></li>
+</ul>
+
+<div id="wrap">
+    <header id="header" class=""> <!-- w100% h75 배경=투명, border-bottom 1px rgba(0.1); 스크롤이벤트 black으로 변환효과(addClass)-->
+        <div class="wrap"> <!-- w1170 h100% margin0 auto -->
+            <div class="gap"> <!-- h100% margin 0 15 -->
+                <div class="container" class="clearfix"> <!-- w100% h100% -->
+                    <div class="left-wrap">
+                        <h1 class="logo-wrap">
+                            <a href="#wrap" class="logo-btn smoothBtn"><img src="./img/logo-restaurant.png" alt=""></a>
+                        </h1>
+                        <nav id="gnb">
+                            <ul>
+                                <li><a href="#section05" class="main-btn smoothBtn">ABOUT</a></li>
+                                <li><a href="#section06" class="main-btn smoothBtn">MENU</a></li>
+                                <li><a href="#section07" class="main-btn smoothBtn">CHEF</a></li>
+                                <li><a href="#section09" class="main-btn smoothBtn">GALLERY</a></li>
+                                <li><a href="#section11" class="main-btn smoothBtn">BLOG</a></li>
+                                <li><a href="#section14" class="main-btn smoothBtn">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right-wrap">
+                        <aside class="aside">
+                            <span>BOOK YOUR TABLES?</span>
+                            <span><a href="#section14" class="aside-btn smoothBtn">BOOK NOW</a></span>
+                        </aside>
+                    </div>
+
+                    <span class="mobilebtn-wrap">
+                        <a href="#" class="mobilebtn">
+                            <i class="line line1"></i>
+                            <i class="line line2"></i>
+                            <i class="line line3"></i>
+                        </a>
+                    </span>
+                    <div class="mobile">
+                        <ul>
+                            <li><a href="#section05" class="main-btn smoothBtn">ABOUT</a></li>
+                            <li><a href="#section06" class="main-btn smoothBtn">MENU</a></li>
+                            <li><a href="#section07" class="main-btn smoothBtn">CHEF</a></li>
+                            <li><a href="#section09" class="main-btn smoothBtn">GALLERY</a></li>
+                            <li><a href="#section11" class="main-btn smoothBtn">BLOG</a></li>
+                            <li><a href="#section14" class="main-btn smoothBtn">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- header끝 -->
+    <main id="main">
+        <section id="section01"> <!-- w100% h=(window.height) fullScreen 배경이미지 -->
+            <div class="wrap"> <!-- w100% -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- w100% -->
+                        <span class="title"><img src="./img/hungry.png" alt=""></span>
+                        <span class="next-move">
+                            <a href="#section02" class="next-moveBtn smoothBtn"><img src="./img/arrow-down.png" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section02" class="section0234"> <!-- w100% h=(window.height) fullScreen 배경이미지 -->
+            <div class="wrap"> <!-- w1170 margin 0 auto -->
+                <div class="gap"> <!-- margin 15 0 -->
+                    <div class="container"> <!-- w100% (실제content너비 1140)-->
+                        <div class="box"> <!-- 450*550 -->
+                            <div class="box-gap"> <!-- 79.797 -->
+                                <div class="content"> <!-- gap을 뺀 나머지 100% -->
+                                    <h2><img src="./img/icon-breakfast.png" alt=""></h2> <!-- 45*54 -->
+                                    <h3><span>BREAKFAST</span></h3> <!-- 34px #614c45 -->
+                                    <h4><span>EVERY DAY 08:00 - 10:00</span></h4>
+                                    <h5><img src="./img/separator.png" alt="separator"></h5> <!-- 178*20 -->
+                                    <p>
+                                        <!-- fz:14px line-height 24px -->
+                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</span>
+                                    </p>
+                                    <span><a href="#section03" class="smoothBtn"><img src="./img/arrow-down.png" alt=""></a></span>
+                                </div>
+                            </div>
+                        </div><!--box-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section03" class="section0234"> <!-- w100% h=(window.height) fullScreen 배경이미지 -->
+            <div class="wrap"> <!-- w1170 margin 0 auto -->
+                <div class="gap"> <!-- margin 15 0 -->
+                    <div class="container"> <!-- w100% (실제content너비 1140)-->
+                        <div class="box"> <!-- 450*550 -->
+                            <div class="box-gap"> <!-- 79.797 -->
+                                <div class="content"> <!-- gap을 뺀 나머지 100% -->
+                                    <h2><img src="./img/icon-breakfast.png" alt=""></h2> <!-- 45*54 -->
+                                    <h3><span>LUNCH</span></h3> <!-- 34px #614c45 -->
+                                    <h4><span>EVERY DAY 13:00 - 15:00</span></h4>
+                                    <h5><img src="./img/separator.png" alt="separator"></h5> <!-- 178*20 -->
+                                    <p>
+                                        <!-- fz:14px line-height 24px -->
+                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</span>
+                                    </p>
+                                    <span><a href="#section04" class="smoothBtn"><img src="./img/arrow-down.png" alt=""></a></span>
+                                </div>
+                            </div>
+                        </div><!--box-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section04" class="section0234"> <!-- w100% h=(window.height) fullScreen 배경이미지 -->
+            <div class="wrap"> <!-- w1170 margin 0 auto -->
+                <div class="gap"> <!-- margin 15 0 -->
+                    <div class="container"> <!-- w100% (실제content너비 1140)-->
+                        <div class="box"> <!-- 450*550 -->
+                            <div class="box-gap"> <!-- 79.797 -->
+                                <div class="content"> <!-- gap을 뺀 나머지 100% -->
+                                    <h2><img src="./img/icon-breakfast.png" alt=""></h2> <!-- 45*54 -->
+                                    <h3><span>DINNER</span></h3> <!-- 34px #614c45 -->
+                                    <h4><span>EVERY DAY 19:00 - 22:00</span></h4>
+                                    <h5><img src="./img/separator.png" alt="separator"></h5> <!-- 178*20 -->
+                                    <p>
+                                        <!-- fz:14px line-height 24px -->
+                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</span>
+                                    </p>
+                                    <span><a href="#section05" class="smoothBtn"><img src="./img/arrow-down.png" alt=""></a></span>
+                                </div>
+                            </div>
+                        </div><!--box-->
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- Discover story -->
+        <section id="section05"> <!-- w100% h=(window.height) padding 30px 0; 배경이미지(본문 전체패턴) -->
+            <div class="wrap"> <!-- w1170 margin 0 auto -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- 임시높이860 -->
+                        <!-- content영역 이미지, 텍스트에서 각각의 여백 margin 0 15px; -->
+
+                        <!-- 타이틀 -->
+                        <div class="title">
+                            <h2>DISCOVER STORY</h2>
+                            <h3><img src="./img/separator.png" alt="separator"></h3>
+                        </div>
+
+                        <!-- 컨텐츠 -->
+                        <div class="content clearfix">
+                            <!-- 왼쪽박스 -->
+                            <article class="left"> <!-- 인라인블럭,float로 정렬 -->
+                                <div class="content-gap">
+                                    <img src="./img/restaurant-img4.jpg" alt="">
+                                </div>
+                            </article>
+                            <!-- 오른쪽박스 -->
+                            <article class="right"> <!-- 인라인블럭,float로 정렬 -->
+                                <div class="content-gap">
+                                    <div class="text-wrap">
+                                        <h4>SPECIALITY OF THE HOUSE</h4>
+                                        <h3>DISCOVER OUR TASTY MEALS</h3>
+                                        <h5>
+                                            <i></i>
+                                        </h5>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.
+                                        </p>
+                                        <span><a href="#section06" class="smoothBtn">Discover Menu</a></span>
+                                    </div>
+                                </div>
+                            </article><!-- right -->
+                        </div><!-- content -->
+                    </div> <!-- container -->
+                </div>
+            </div>
+        </section>
+        <!-- Menu gallery -->
+        <section id="section06"> <!-- w100% h 740고정 padding 0; -->
+            <div class="wrap"> <!-- w100% h 740고정 padding 0; -->
+                <div class="gap"> <!-- w100% h 740고정 padding 0; -->
+                    <div class="container"><!-- w100% h 740고정 padding 0; -->
+                       <!-- 갤러리에서 margin 0 15; -->
+                       <div class="content">
+                           <ul class="gallery">
+                               <li class="col col1">
+                                   <div class="gallery-gap">
+                                       <div class="bg-image" tabindex="0">
+
+                                            <div class="small-box">
+                                                <div class="content-title">
+                                                    <h2><img src="./img/restaurant-img14.jpg" alt=""></h2>
+                                                    <h3>BREAKFAST</h3>
+                                                    <h4>EVERY DAY 08:00 - 10:00</h4>
+                                                    <h5><img src="./img/separator.png" alt="separator"></h5>
+                                                </div>
+                                            </div><!-- small-box -->
+                                            <div class="content-box">
+                                                <ul>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img8.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>SOFT-BOILED EGG - $12.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img9.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>CREPES OF WRATH - $06.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img10.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>CREAMSICLE SHAKE - $10.60</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img11.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>PERFECT KENTUCKY - $09.50</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img12.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>SMOKED SANDWICH - $08.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- content-box -->
+                                        </div><!-- bg-image -->
+                                   </div><!-- gallery-gap -->
+                               </li><!-- col1 -->
+                               <li class="col col2">
+                                   <div class="gallery-gap">
+                                       <div class="bg-image" tabindex="0">
+                                           
+                                            <div class="small-box">
+                                                <div class="content-title">
+                                                    <h2><img src="./img/restaurant-img15.jpg" alt=""></h2>
+                                                    <h3>LUNCH</h3>
+                                                    <h4>EVERY DAY 13:00 - 15:00</h4>
+                                                    <h5><img src="./img/separator.png" alt="separator"></h5>
+                                                </div>
+                                            </div>
+                                            <div class="content-box">
+                                                <ul>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img8.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>SOFT-BOILED EGG - $12.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img9.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>CREPES OF WRATH - $06.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img10.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>CREAMSICLE SHAKE - $10.60</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img11.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>PERFECT KENTUCKY - $09.50</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img12.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>SMOKED SANDWICH - $08.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- content-box -->
+                                        </div><!-- bg-image -->
+                                   </div><!-- gallery-gap -->
+                               </li><!-- col2 -->
+                               <li class="col col3">
+                                   <div class="gallery-gap">
+                                       <div class="bg-image" tabindex="0">
+
+                                            <div class="small-box">
+                                                <div class="content-title">
+                                                    <h2><img src="./img/restaurant-img16.jpg" alt=""></h2>
+                                                    <h3>DINNER</h3>
+                                                    <h4>EVERY DAY 19:00 - 22:00</h4>
+                                                    <h5><img src="./img/separator.png" alt="separator"></h5>
+                                                </div>
+                                            </div>
+                                            <div class="content-box">
+                                                <ul>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img8.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>SOFT-BOILED EGG - $12.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img9.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>CREPES OF WRATH - $06.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img10.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>CREAMSICLE SHAKE - $10.60</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img11.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>PERFECT KENTUCKY - $09.50</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix">
+                                                            <div class="col col1"><img src="./img/restaurant-img12.jpg" alt=""></div>
+                                                            <ul class="col col2">
+                                                                <li><h4>SMOKED SANDWICH - $08.00</h4></li>
+                                                                <li>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- content-box -->
+                                        </div><!-- bg-image -->
+                                   </div><!-- gallery-gap -->
+                               </li><!-- col3 -->
+                           </ul><!-- gallery -->
+                       </div><!-- content -->
+                    </div> <!-- container -->
+                </div><!-- gap -->
+            </div><!-- wrap -->
+        </section>
+        <!-- Our chef -->
+        <section id="section07"> <!-- w100% h 콘텐츠에따라 바뀜 padding 130px 0 0 0; -->
+            <div class="wrap"> <!-- w100% -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- w100% 임시높이782-->
+                        <!-- 갤러리에서 margin 0 15; -->
+                        <!-- 타이틀 -->
+                        <div class="title">
+                            <h2>OUR CHEF</h2>
+                            <h3><img src="./img/separator.png" alt="separator"></h3>
+                        </div>
+
+                        <!-- 프로필 -->
+                        <div class="content">
+                            <ul class="chef-profile clearfix">
+                                <li>
+                                    <div class="profile-gap" tabindex="0">
+                                        <img src="./img/restaurant-img21.jpg" alt="">
+                                        <div class="profile-box">
+                                            <div class="text-gap">
+                                                <div class="text-wrap">
+                                                    <h5><i></i></h5>
+                                                    <h3>SANCHO PANSA</h3>
+                                                    <h4>CHEF, CO-FOUNDER</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-gap" tabindex="0">
+                                        <img src="./img/restaurant-img20.jpg" alt="">
+                                        <div class="profile-box">
+                                            <div class="text-gap">
+                                                <div class="text-wrap">
+                                                    <h5><i></i></h5>
+                                                    <h3>PATRICK SMITH</h3>
+                                                    <h4>CHEF, CO-FOUNDER</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-gap" tabindex="0">
+                                        <img src="./img/restaurant-img22.jpg" alt="">
+                                        <div class="profile-box">
+                                            <div class="text-gap">
+                                                <div class="text-wrap">
+                                                    <h5><i></i></h5>
+                                                    <h3>SOMMER CHRIS</h3>
+                                                    <h4>CHEF, CO-FOUNDER</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-gap" tabindex="0">
+                                        <img src="./img/restaurant-img23.jpg" alt="">
+                                        <div class="profile-box">
+                                            <div class="text-gap">
+                                                <div class="text-wrap">
+                                                    <h5><i></i></h5>
+                                                    <h3>JANE LUPKIN</h3>
+                                                    <h4>CHEF, CO-FOUNDER</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- container -->
+                </div>
+            </div>
+        </section>
+        <!-- Special dishes -->
+        <section id="section08"> <!-- w100% 배경이미지 fixed padding 130 0; -->
+            <div class="wrap"> <!-- w1170 margin 0 auto -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- w100% 임시높이582-->
+                        <!-- 갤러리에서 margin 0 15; -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Food gallery -->
+        <section id="section09"> <!-- w100% padding 130 0 0 0; -->
+            <div class="wrap"> <!-- w100% -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- w100% 임시높이932 -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 말풍선 slide -->
+        <section id="section10"> <!-- w100% padding 130 0; -->
+            <div class="wrap"> <!-- w1170 margin a auto -->
+                <div class="gap"> <!-- margin 0 15px -->
+                    <div class="container"> <!-- w100% 임시높이268-->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest blog -->
+        <section id="section11"> <!-- w100% 배경이미지 fixed padding 130 0; -->
+            <div class="wrap"> <!-- w1170 margin a auto -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- w100% 임시높이625-->
+                        <!-- 갤러리에서 margin 15px; -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Book -->
+        <section id="section12"> <!-- w100% 배경이미지-패턴 padding 130 0; -->
+            <div class="wrap"> <!-- w1170 margin a auto -->
+                <div class="gap"> <!-- margin 0 15px -->
+                    <div class="container"> <!-- w100% 임시높이187-->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- count -->
+        <section id="section13"> <!-- w100% padding 130 0; -->
+            <div class="wrap"> <!-- w1170 margin a auto -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- w100% -->
+                        <!-- content 목록여백 margin0 15px -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section id="section14"> <!-- w100% padding 130 0; -->
+            <div class="wrap"> <!-- w1170 margin a auto -->
+                <div class="gap"> <!-- w100% -->
+                    <div class="container"> <!-- w100% 임시높이 640-->
+                        <!-- content 목록여백 margin0 15px -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main><!-- main 끝-->
+    
+    <footer id="footer"> <!-- w100% scroll-->
+        <div class="wrap"> <!-- w1170 margin a auto -->
+            <div class="gap"> <!-- marin 0 15px-->
+                <div class="container"> <!-- w100% 임시높이410-->
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/brando.js"></script>
+
+
+</div> <!-- wrap -->
+</body>
+</html>
