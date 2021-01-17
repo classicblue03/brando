@@ -64,7 +64,7 @@
     <header id="header" class=""> <!-- w100% h75 배경=투명, border-bottom 1px rgba(0.1); 스크롤이벤트 black으로 변환효과(addClass)-->
         <div class="wrap"> <!-- w1170 h100% margin0 auto -->
             <div class="gap"> <!-- h100% margin 0 15 -->
-                <div class="container" class="clearfix"> <!-- w100% h100% -->
+                <div class="container clearfix"> <!-- w100% h100% -->
                     <div class="left-wrap">
                         <h1 class="logo-wrap">
                             <a href="#wrap" class="logo-btn smoothBtn"><img src="./img/logo-restaurant.png" alt="brando로고"></a>
@@ -108,7 +108,7 @@
             </div>
         </div>
     </header>
-    <main id="main">
+    <main id="main"><!-- 클래스, 아이디가 겹치지않도록 페이지구분 main(index.html) / main1(main1-1, main1-2..), main2().. -->
         <section id="section01"> <!-- w100% h=(window.height) fullScreen 배경이미지 -->
             <div class="wrap"> <!-- w100% -->
                 <div class="gap"> <!-- w100% -->
@@ -468,7 +468,7 @@
             </div><!-- wrap -->
         </section>
         <!-- Our chef -->
-        <section id="section07" style='clear:botth;'> <!-- w100% h 콘텐츠에따라 바뀜 padding 130px 0 0 0; -->
+        <section id="section07"> <!-- w100% h 콘텐츠에따라 바뀜 padding 130px 0 0 0; -->
             <div class="wrap"> <!-- w100% -->
                 <div class="gap"> <!-- w100% -->
                     <div class="container"> <!-- w100% 임시높이782-->
@@ -569,7 +569,7 @@
                                                     <h4>ONLY</h4>
                                                     <h5>$15.00</h5></div>
                                                 </div>
-                                            <div class="title-wrap"><h3>PERFECT KENTUCKY</h3><h4>OLIVES / PARMESAN / BASIL</h4></div>
+                                            <div class="title-wrap"><h3>PERFECT KENTUCKY</h3><h4>TOMATOES / PARMESAN / BASIL</h4></div>
                                         </div>
                                     </div>
                                 </li>
@@ -582,7 +582,7 @@
                                                     <h4>ONLY</h4>
                                                     <h5>$15.00</h5></div>
                                                 </div>
-                                            <div class="title-wrap"><h3>HOT CHICKEN BREAST</h3><h4>TOMATOES / PARMESAN / BASIL</h4></div>
+                                            <div class="title-wrap"><h3>HOT CHICKEN BREAST</h3><h4>OLIVES / PARMESAN / BASIL</h4></div>
                                         </div>
                                     </div>
                                 </li>
@@ -595,7 +595,7 @@
                                                     <h4>ONLY</h4>
                                                     <h5>$15.00</h5></div>
                                                 </div>
-                                            <div class="title-wrap"><h3>CHILLY CHEESE STEAK</h3><h4>TOMATOES / PARMESAN / BASIL</h4></div>
+                                            <div class="title-wrap"><h3>CHILLY CHEESE STEAK</h3><h4>CHILLI / PARMESAN / BASIL</h4></div>
                                         </div>
                                     </div>
                                 </li>
@@ -615,136 +615,145 @@
                             <h3><img src="./img/separator.png" alt="separator"></h3>
                         </div>
                         <nav id="nav">
-                            <ul>
-                                <li><a href="#" class="gll-btn">ALL<i class="blind">아이콘</i></a></li>
-                                <li><a href="#" class="gll-btn">ALL<i class="blind">아이콘</i></a></li>
-                                <li><a href="#" class="gll-btn">ALL<i class="blind">아이콘</i></a></li>
-                                <li><a href="#" class="gll-btn">ALL<i class="blind">아이콘</i></a></li>
-                                <li><a href="#" class="gll-btn">ALL<i class="blind">아이콘</i></a></li>
+                            <ul><!-- inline-flex, inline-block, inline-grid -->
+                                <li><a href="javascript:void(0)" class="gall-btn addNav">ALL<i></i></a></li>
+                                <li><a href="javascript:void(0)" class="gall-btn">BREAKFAST<i></i></a></li>
+                                <li><a href="javascript:void(0)" class="gall-btn">DINNER<i></i></a></li>
+                                <li><a href="javascript:void(0)" class="gall-btn">DRINKS<i></i></a></li>
+                                <li><a href="javascript:void(0)" class="gall-btn">LUNCH<i></i></a></li>
                             </ul>
                         </nav>
                         <div class="content">
-                            <ul>
-                                <li>
+                            <ul class="gallery-container"><!-- flex-container -->
+                                <li class="gallery-item"><!-- flex-item -->
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img25.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img25.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
-                                <li>
+                                <li class="gallery-item">
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img26.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img26.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
-                                <li>
+                                <li class="gallery-item">
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img27.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img27.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
-                                <li>
+                                <li class="gallery-item">
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img28.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img28.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
-                                <li>
+                                <li class="gallery-item">
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img29.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img29.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
-                                <li>
+                                <li class="gallery-item">
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img30.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img30.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
-                                <li>
+                                <li class="gallery-item">
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img31.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img31.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
-                                <li>
+                                <li class="gallery-item">
                                     <div class="gallery-gap">
                                         <div class="box">
                                             <div class="img-box">
-                                                <a href="#" class="img-btn"><img src="./img/restaurant-img32.jpg" alt=""></a>
+                                                <a href="javascript:" class="img-btn"><img src="./img/restaurant-img32.jpg" alt=""></a>
                                             </div>
                                             <div class="img-caption">
                                                 <div class="caption-gap">
                                                     <h3>Soft-Boiled Organic</h3>
                                                     <h4>One Dish - $25.55</h4>
                                                 </div>
+                                                <a href="javascript:" class="caption-btn blind">갤러리이미지 캡션링크</a><!-- absolute -->
                                             </div>
                                         </div><!-- box -->
                                     </div><!-- gallery-gap -->
                                 </li>
+                                   
                             </ul>
                         </div>
                     </div><!-- container -->
@@ -761,7 +770,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Latest blog -->
         <section id="section11"> <!-- w100% 배경이미지 fixed padding 130 0; -->
             <div class="wrap"> <!-- w1170 margin a auto -->
@@ -803,7 +811,6 @@
             </div>
         </section>
     </main><!-- main 끝-->
-    
     <footer id="footer"> <!-- w100% scroll-->
         <div class="wrap"> <!-- w1170 margin a auto -->
             <div class="gap"> <!-- marin 0 15px-->
